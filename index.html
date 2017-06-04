@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="assets/javascript/app.js"></script>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+<body>
+
+	<div id="start">
+		<button type="button" class="btn">Basic</button>
+	</div>
+	<div id="results">
+		<p>Correct: <span id="right"></span> </p>
+		<p>Incorrect: <span id="wrong"></span></p>
+		<p>Unguessed: <span id="noShow"></span></p>
+
+	</div>
+	<form>
+		<div id="hideForm" class="form-group">
+			<span id="countdown" class="timer"></span>
+			<h3>What is your favorite food?</h3>
+			<div class="radio-inline">
+		  		<label>
+					<input type="radio" name="group1" value="1">
+				Option 1
+		  		</label>
+			</div>
+			<div class="radio-inline">
+		  		<label>
+				<input type="radio"  name="group1" value="0" id="correct">
+				Option 2
+		 	 	</label>
+			</div>
+			<h3>What is your favorite number?</h3>
+			<div class="radio-inline">
+		  		<label>
+					<input type="radio" name="group2" value="0">
+				Option 1
+		  		</label>
+			</div>
+			<div class="radio-inline">
+		  		<label>
+				<input type="radio"  name="group2" value="1" id="correct">
+				Option 2
+		 	 	</label>
+			</div>
+			<h3>What is your favorite dog?</h3>
+			<div class="radio-inline">
+		  		<label>
+					<input type="radio" name="group3" value="1">
+				Option 1
+		  		</label>
+			</div>
+			<div class="radio-inline">
+		  		<label>
+				<input type="radio"  name="group3" value="0" id="correct">
+				Option 2
+		 	 	</label>
+			</div>
+			<h3>What is your favorite cat?</h3>
+			<div class="radio-inline">
+		  		<label>
+					<input type="radio" name="group4" value="0">
+				Option 1
+		  		</label>
+			</div>
+			<div class="radio-inline">
+		  		<label>
+				<input type="radio"  name="group5" value="1" id="correct">
+				Option 2
+		 	 	</label>
+			</div>
+		<div>
+			<button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">
+  			Click me to start timer!
+  			</button>
+  			<button type="button" id="myButton2" data-loading-text="Loading..." class="btn btn-primary" style="background-color: red" autocomplete="off">
+  			Click me to end game!
+  			</button>
+  		</div>
+		</div>
+
+	</form>
+</body>
+</html>

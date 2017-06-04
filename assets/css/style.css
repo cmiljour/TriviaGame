@@ -1,7 +1,14 @@
-form {
+body {
 	text-align: center;
 }
 
-#myButton {
-	text-align: center;
+#results {
+	font-weight: bolder;
+}
+
+#start, #results {
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    width: 100%;
 }

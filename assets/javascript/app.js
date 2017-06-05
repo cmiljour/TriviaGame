@@ -59,16 +59,16 @@ $(document).ready( function() {
         $("#hideForm").show();
         $("#start").hide();
     });
-    // start the game and timer
+    // start the game and create timer
     $('#myButton').on('click', function () {
     countdownTimer = setInterval(secondPassed, 1000);    
     })
-    
+
     // end timer button 
     $('#myButton2').click(function () {
         endGame();
     })
-
+    // count up not selected with a simple math trick
     notSelected = notSelected - 4;
 
 });
